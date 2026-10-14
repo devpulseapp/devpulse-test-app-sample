@@ -9,6 +9,6 @@
     "package": "devpulse-addon build . && devpulse-addon pack . --output=dist/"
   },
   "devDependencies": {
-    "devpulse-addon-sdk-v2": "file:../sdk/devpulse-addon-sdk-v2-0.17.0.tgz"
+    "devpulse-addon-sdk-v2": "file:../sdk/devpulse-addon-sdk-v2-0.18.0.tgz"
   }
 }
