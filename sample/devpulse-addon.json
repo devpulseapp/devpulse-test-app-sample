@@ -2,7 +2,7 @@
   "apiVersion": 2,
   "manifestVersion": 2,
   "id": "placeholder.sample-app",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "displayName": "Placeholder Sample App",
   "description": "A placeholder App for testing DevPulse Apps: a sidebar panel, a workspace tab, a command and a background task.",
   "category": "tool",
