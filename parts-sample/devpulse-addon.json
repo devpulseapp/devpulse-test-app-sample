@@ -1,0 +1,47 @@
+{
+  "apiVersion": 2,
+  "manifestVersion": 2,
+  "apiFeatures": { "required": ["contributions.integration-v1", "runtime.trusted-node-v1", "apps.permissions-v1", "packages.optional-parts-v1"], "optional": [] },
+  "runtime": { "id": "parts-sample", "tier": "trusted-node", "artifact": "node-esm", "entrypoint": "app/main.js" },
+  "target": { "platform": "any", "architecture": "any" },
+  "id": "placeholder.parts-sample",
+  "version": "0.1.0",
+  "displayName": "Placeholder Parts Sample",
+  "description": "A placeholder App for testing optional parts: greetings in three languages, and confetti.",
+  "category": "tool",
+  "publisher": { "id": "placeholder", "displayName": "Marketplace test placeholder" },
+  "authors": [{ "name": "Marketplace test placeholder" }],
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "readme": "README.md",
+  "defaultLocale": "en",
+  "locales": [],
+  "engines": { "devpulse": ">=0.0.1 <1.0.0" },
+  "permissions": [{ "id": "panel", "capability": "workspace.panel.open", "scope": { "kind": "add-on" }, "requiredness": "required", "reason": "Shows the greetings." }],
+  "requirements": [],
+  "settings": [],
+  "contributes": [
+    {
+      "id": "parts-sample",
+      "type": "integration",
+      "displayName": "Parts sample",
+      "description": "Greets in the languages installed.",
+      "permissionIds": ["panel"],
+      "settingIds": [],
+      "requirementIds": [],
+      "sidebar": { "title": "Greetings", "icon": "layer-group", "page": "views/panel.html" }
+    }
+  ],
+  "optionalParts": {
+    "groups": [
+      { "id": "greetings", "displayName": "Greetings", "minimum": 1 },
+      { "id": "extras", "displayName": "Extras" }
+    ],
+    "parts": [
+      { "id": "greetings/en", "displayName": "English" },
+      { "id": "greetings/hy", "displayName": "Հայերեն" },
+      { "id": "greetings/ja", "displayName": "日本語" },
+      { "id": "extras/confetti", "displayName": "Confetti" }
+    ]
+  }
+}

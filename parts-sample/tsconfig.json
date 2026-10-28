@@ -1,0 +1,1 @@
+{ "compilerOptions": { "module": "esnext", "moduleResolution": "bundler", "target": "es2022", "strict": true, "allowImportingTsExtensions": true, "noEmit": true, "lib": ["es2022", "dom"], "types": ["node"] }, "include": ["src", "views"] }
