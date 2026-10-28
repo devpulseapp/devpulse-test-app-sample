@@ -1,14 +1,10 @@
-:root {
-  color-scheme: dark light;
-}
-
 body {
   margin: 0;
   padding: 12px;
-  background: var(--devpulse-app-background, #1e1e1e);
-  color: var(--devpulse-app-text, #ddd);
-  font-family: var(--devpulse-app-font-family, sans-serif);
-  font-size: var(--devpulse-app-font-size, 13px);
+  background: var(--dp-surface-panel);
+  color: var(--dp-text-primary);
+  font-family: sans-serif;
+  font-size: var(--dp-font-size-ui);
 }
 
 h1 {
@@ -17,22 +13,22 @@ h1 {
 }
 
 .muted {
-  color: var(--devpulse-app-text-muted, #999);
+  color: var(--dp-text-muted);
 }
 
 button {
   margin: 4px 6px 4px 0;
   padding: 4px 10px;
-  border: 1px solid var(--devpulse-app-border, #444);
+  border: 1px solid var(--dp-border-control);
   border-radius: 4px;
-  background: var(--devpulse-app-surface, #2a2a2a);
+  background: var(--dp-element-background);
   color: inherit;
   font: inherit;
   cursor: pointer;
 }
 
 button:hover {
-  border-color: var(--devpulse-app-accent, #0a84ff);
+  border-color: var(--dp-accent-default);
 }
 
 ol {
